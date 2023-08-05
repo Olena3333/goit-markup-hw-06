@@ -1,0 +1,10 @@
+:root {
+  --primary-text-color: #434455;
+  --hero-tatle-color: #ffffff;
+  --title-text-color: #2e2f42;
+  --accent-color: #4d5ae5;
+  --background-color: #f4f4fd;
+  --navyblue-moda: #2e2f42;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --titing-duration: 250ms;
+}
