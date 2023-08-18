@@ -41,10 +41,19 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
             </li>
           </ul>
         </nav>
-        <button class="burger-btn" type="button">
-          <svg class="burger-btn-icon" width="32" height="22" aria-label="open mobile meny icon">
-            <use href="./images/icons.svg#icon-burger">
-            </use>
+        <button
+          class="burger-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="burger-btn-icon"
+            width="32"
+            height="22"
+            aria-label="open mobile meny icon"
+          >
+            <use href="./images/icons.svg#icon-burger"></use>
           </svg>
         </button>
         <address class="address">
@@ -63,9 +72,9 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
         </address>
       </div>
     </header>
-    <main> 
-    <!-- Hero section -->
-    <!-- <section class="hero">
+    <main>
+      <!-- Hero section -->
+      <section class="hero">
         <div class="container container-hero">
           <h1 class="hero-title">
             Effective Solutions <br />
@@ -75,9 +84,9 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
             Order Service
           </button>
         </div>
-      </section> -->
-    <!-- section Our principle -->
-    <!--  <section class="section">
+      </section>
+      <!-- section Our principle -->
+      <section class="section">
         <div class="container section-principles">
           <h2 class="visually-hidden">Our principles</h2>
           <ul class="principles-list list">
@@ -87,8 +96,8 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="title">Strategy</h3>
-              <p class="paragraph">
+              <h3 class="principles-title">Strategy</h3>
+              <p class="principles-paragraph">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -99,8 +108,8 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
                   <use href="./images/icons.svg#icon-clock "></use>
                 </svg>
               </div>
-              <h3 class="title">Punctuality</h3>
-              <p class="paragraph">
+              <h3 class="principles-title">Punctuality</h3>
+              <p class="principles-paragraph">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -111,8 +120,8 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="title">Diligence</h3>
-              <p class="paragraph">
+              <h3 class="principles-title">Diligence</h3>
+              <p class="principles-paragraph">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
@@ -123,48 +132,68 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="title">Technologies</h3>
-              <p class="paragraph">
+              <h3 class="principles-title">Technologies</h3>
+              <p class="principles-paragraph">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
             </li>
           </ul>
         </div>
-      </section>   -->
-    <!--  section What are we doing -->
-    <!--   <section class="section-about-us">
+      </section>
+      <!--  section What are we doing -->
+      <section class="section section-about-us">
         <div class="container container-section-about-us">
           <h2 class="section-title">What are we doing</h2>
           <ul class="list about-us-list">
             <li class="about-us-item">
               <img
-                src="./images/images1.jpg"
+                srcset="
+                  ./images/about-us/about-us-images1.jpg 1x,
+                  ./images/about-us/about-us1@2x.jpg     2x
+                "
+                src="./images/about-us/about-us-images1.jpg"
                 alt="Monitor screen"
                 width="360"
               />
             </li>
             <li class="about-us-item">
-              <img src="./images/images2.jpg" alt="Phone display" width="360" />
+              <img
+                srcset="
+                  ./images/about-us/about-us-images2.jpg 1x,
+                  ./images/about-us/about-us2@2x.jpg     2x
+                "
+                src="./images/about-us/about-us-images2.jpg"
+                alt="Phone display"
+                width="360"
+              />
             </li>
             <li class="about-us-item">
               <img
-                src="./images/images3.jpg"
+                srcset="
+                  ./images/about-us/about-us-images3.jpg 1x,
+                  ./images/about-us/about-us3@2x.jpg     2x
+                "
+                src="./images/about-us/about-us-images3.jpg"
                 alt="Laptop and phone in hands"
                 width="360"
               />
             </li>
           </ul>
         </div>
-      </section> -->
-    <!--  section Our Team -->
-    <!--   <section class="about-us-team">
+      </section>
+      <!--  section Our Team -->
+      <section class="section about-us-team">
         <div class="container container-team">
           <h2 class="section-title">Our Team</h2>
           <ul class="list team">
             <li class="team-designer">
               <img
-                src="./images/img1.jpg"
+                srcset="
+                  ./images/team/img1.jpg     1x,
+                  ./images/team/img-1@2x.jpg 2x
+                "
+                src="./images/team/img1.jpg"
                 alt="Young man with a beard"
                 width="264"
               />
@@ -205,7 +234,11 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
             </li>
             <li class="team-designer">
               <img
-                src="./images/img2.jpg"
+                srcset="
+                  ./images/team/img2.jpg     1x,
+                  ./images/team/img-2@2x.jpg 2x
+                "
+                src="./images/team/img2.jpg"
                 alt="A young, smiling man"
                 width="264"
               />
@@ -246,7 +279,11 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
             </li>
             <li class="team-designer">
               <img
-                src="./images/img3.jpg"
+                srcset="
+                  ./images/team/img3.jpg     1x,
+                  ./images/team/img-3@2x.jpg 2x
+                "
+                src="./images/team/img3.jpg"
                 alt="Young girl with long hair"
                 width="264"
               />
@@ -287,7 +324,11 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
             </li>
             <li class="team-designer">
               <img
-                src="./images/img4.jpg"
+                srcset="
+                  ./images/team/img4.jpg     1x,
+                  ./images/team/img-4@2x.jpg 2x
+                "
+                src="./images/team/img4.jpg"
                 alt="A young, smiling man"
                 width="264"
               />
@@ -328,9 +369,9 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
             </li>
           </ul>
         </div>
-      </section>   -->
-    <!-- customers -->
-    <!--    <section class="customers">
+      </section>
+      <!-- customers -->
+      <section class="section customers">
         <div class="container container-customers">
           <h2 class="section-title">Customers</h2>
           <ul class="lists-customers list">
@@ -452,7 +493,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
           </form>
         </div>
       </div>
-    </footer>  -->
+    </footer>
     <!-- modal window -->
     <!--   <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
@@ -572,7 +613,89 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
-    -->
+-->
+    <!-- mobile window -->
+
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="modal-close-btn js-close-menu" type="button">
+        <svg
+          class="modal-close-btn-icon"
+          width="8"
+          height="8"
+          aria-label="close icon"
+        >
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu-list list">
+        <li class="mobile-menu-item">
+          <a href="" class="link mobile-menu-link active">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="link mobile-menu-link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="" class="link mobile-menu-link">Contacts</a>
+        </li>
+      </ul>
+
+      <div class="mobile-menu-address-wrapper">
+        <address class="mobile-menu-address">
+          <ul class="list mobile-menu-address-list">
+            <li class="mobile-menu-address-item">
+              <a class="link mobile-menu-tel-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-menu-address-item">
+              <a
+                class="link mobile-menu-email-link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="list mobile-menu-social-list">
+          <li class="mobile-menu-social-item">
+            <a class="mobile-menu-social-link" href="">
+              <svg class="mobile-menu-social-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-item">
+            <a class="mobile-menu-social-link" href="">
+              <svg class="mobile-menu-social-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-item">
+            <a class="mobile-menu-social-link" href="">
+              <svg class="mobile-menu-social-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-item">
+            <a class="mobile-menu-social-link" href="">
+              <svg class="mobile-menu-social-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- <script src="./js/modal.js"></script>-->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

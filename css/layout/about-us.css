@@ -1,0 +1,44 @@
+.section-about-us {
+  display: none;
+}
+@media screen and (min-width: 1158px) {
+  .section-about-us {
+    display: flex;
+  }
+  .container-section-about-us {
+    display: block;
+  }
+  .about-us-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about-us-item {
+    width: calc(calc(100% - 24px * 2) / 3);
+  }
+
+  .about-us-item:not(:last-child) {
+    margin-right: 24px;
+  }
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/

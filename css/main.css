@@ -6,5 +6,12 @@
 @import url(./base/container.css);
 @import url(./base/section.css);
 
-/* */
+/* layout*/
 @import url(./layout/header.css);
+@import url(./layout/mobile-menu.css);
+@import url(./layout/hero.css);
+@import url(./layout/principles.css);
+@import url(./layout/about-us.css);
+@import url(./layout/team.css);
+@import url(./layout/footer.css);
+@import url(./layout/customers.css);
