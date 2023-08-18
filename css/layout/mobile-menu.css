@@ -137,4 +137,8 @@
   .mobile-menu {
     width: 100%;
   }
+  .mobile-menu-tel-link {
+    font-size: 23px;
+    letter-spacing: 0.1px;
+  }
 }

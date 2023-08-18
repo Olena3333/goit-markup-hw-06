@@ -103,6 +103,7 @@
   .address {
     color: var(--primary-text-color);
     text-transform: lowercase;
+    font-style: normal;
   }
   .address-link {
     line-height: 1.5;
