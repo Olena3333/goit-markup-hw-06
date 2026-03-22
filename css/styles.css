@@ -363,7 +363,7 @@ address {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../../images/hero/bg-mobile.jpg);
+    url(../images/hero/bg-mobile.jpg);
   background-size: cover;
   padding-top: 112px;
   padding-bottom: 112px;
@@ -424,7 +424,7 @@ address {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../../images/hero/bg-mobile@2x.jpg);
+      url(../images/hero/bg-mobile@2x.jpg);
   }
 }
 
@@ -434,7 +434,7 @@ address {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../../images/hero/bg-tablet.jpg);
+      url(../images/hero/bg-tablet.jpg);
   }
 
   .hero-title {
@@ -453,7 +453,7 @@ address {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../../images/hero/bg-tablet@2x.jpg);
+        url(../images/hero/bg-tablet@2x.jpg);
     }
   }
 }
@@ -464,7 +464,7 @@ address {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../../images/hero/bg-desktop.jpg);
+      url(../images/hero/bg-desktop.jpg);
     padding-top: 188px;
     padding-bottom: 188px;
   }
@@ -481,7 +481,7 @@ address {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../../images/hero/bg-desktop@2x.jpg);
+        url(../images/hero/bg-desktop@2x.jpg);
     }
   }
 }
