@@ -803,7 +803,6 @@ portfolio-list-item:hover {
   flex-direction: column;
   align-items: center;
   gap: 17.5px;
-  margin-bottom: 72px;
 }
 
 .footer-left {
@@ -890,11 +889,11 @@ portfolio-list-item:hover {
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  
 }
 
 .footer-subscribe-form-input {
-  width: 264px;
+  width: 100%;
+  max-width: 398px;
   height: 40px;
   border: 1px solid #ffffff;
   background-color: transparent;
@@ -937,26 +936,75 @@ portfolio-list-item:hover {
   .footer {
     padding: 96px 0px;
   }
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+  footer-left {
+    display: block;
+  }
+  .text-right {
+    display: block;
+    padding-left: 24px;
+    align-items: flex-start;
+  }
+  .text-footer {
+    margin-bottom: 16px;
+    width: 264px;
+  }
+  .social-list-footer {
+    display: flex;
+    gap: 16px;
+  }
+  .social-link-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-subscribe {
+    display: block;
+    width: 100%;
+    padding: 0 16px;
+  }
+  .footer-subscribe-form {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  .footer-subscribe-form-input {
+    width: 264px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
+  .footer {
+      padding: 100px 0;
+    }
+
   .footer-content {
-    display: flex;
-    align-items: baseline;
+    flex-wrap: nowrap;
+      padding: 0 15px;
+      gap: 0;
   }
 
   .footer-left {
     margin-right: 120px;
   }
   .footer-right {
-    padding-left: 120px;
+    margin-right: 80px;
+      padding-left: 0;
   }
   .footer-subscribe {
-    display: block;
     margin-right: 120px;
   }
-  .footer-subscribe-form {
-    display: flex;
-    gap: 24px;
+  .footer-subscribe-text {
+    margin-bottom: 16px;
   }
+    .footer-subscribe {
+      margin-left: auto;
+    }
 }
