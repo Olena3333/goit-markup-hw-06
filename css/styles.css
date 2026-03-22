@@ -23,6 +23,7 @@ body {
   line-height: 1.11;
   letter-spacing: 0.72px;
 }
+
 h1,
 h2,
 h3,
@@ -103,6 +104,51 @@ address {
   .container {
     max-width: 1158px;
     padding: 0 15px;
+  }
+}
+
+/* sektion*/
+.section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.section-title {
+  margin-bottom: 72px;
+  color: var(--navyblue, #2e2f42);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+  /* 111.111% */
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 1158px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
   }
 }
 
@@ -264,11 +310,9 @@ address {
   width: 100%;
   height: 100%;
   background-color: #fff;
-
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -283,7 +327,6 @@ address {
   position: relative;
   padding-top: 72px;
   padding-bottom: 40px;
-
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -302,5 +345,245 @@ address {
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
+  }
+}
+
+/* --------hero--------- */
+
+.section-hero {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../../images/hero/bg-mobile.jpg);
+  background-size: cover;
+  padding-top: 112px;
+  padding-bottom: 112px;
+}
+
+.hero-title {
+  font-weight: 700;
+  margin: 0 auto;
+  color: var(--hero-title-color);
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  max-width: 496px;
+}
+
+.hero-button {
+  display: block;
+  border: none;
+  border-radius: 4px;
+  margin-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 169px;
+  padding: 16px 31px;
+  transition-property: background-color;
+  transition-duration: var(--timing-duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #404bbf;
+}
+
+/* .button {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  color: var(--hero-tatle-color);
+  background-color: var(--accent-color);
+  text-align: center;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--hero-tatle-color);
+  background-color: #404bbf;
+} */
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../../images/hero/bg-mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../../images/hero/bg-tablet.jpg);
+  }
+
+  .hero-title {
+    margin-bottom: 36px;
+    font-size: 56px;
+    font-style: normal;
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 767px),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../../images/hero/bg-tablet@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .section-hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../../images/hero/bg-desktop.jpg);
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+
+  .hero-title {
+    margin-bottom: 48px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../../images/hero/bg-desktop@2x.jpg);
+    }
+  }
+}
+
+/* --------principles--------- */
+
+.section-principles {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+
+.principle-item-title,
+.team-item-title,
+.portfolio-item-title {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--title-text-color);
+  text-align: center;
+}
+
+.principle-item-text {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02px;
+}
+
+.principles-list-item {
+  margin-bottom: 72px;
+}
+
+.principle-icon {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .principles-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .principles-list-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .principle-item-title,
+  .team-item-title,
+  .portfolio-item-title {
+    text-align: left;
+  }
+
+  .principle-item-text,
+  .team-item-text,
+  .portfolio-item-text,
+  .footer-text {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+
+  .section-principles {
+    padding: 120px 0;
+  }
+
+  .principle-icon {
+    display: flex;
+    background-color: var(--background-color);
+    height: 112px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+  }
+
+  .principles-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .principles-list-item {
+    width: calc((100% - 24px * 3) / 4);
+  }
+
+  .principle-item-title,
+  .team-item-title,
+  .portfolio-item-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+
+  .principle-item-text,
+  .team-item-text,
+  .portfolio-item-text,
+  .footer-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
   }
 }
