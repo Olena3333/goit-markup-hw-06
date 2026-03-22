@@ -117,12 +117,10 @@ address {
   margin-bottom: 72px;
   color: var(--navyblue, #2e2f42);
   text-align: center;
-  font-family: Roboto;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.1;
-  /* 111.111% */
-  letter-spacing: 0.72px;
+  letter-spacing: 0.02em;
   text-transform: capitalize;
 }
 
@@ -587,3 +585,116 @@ address {
     line-height: 1.5;
   }
 }
+
+/* Our Team*/
+.section-team {
+  padding: 120px 0;
+  background: #f4f4fd;
+}
+
+.team-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  align-items: center;
+}
+
+.team-list-item {
+  display: block;
+  background-color: var(--hero-title-color);
+  text-align: center;
+  width: 100%;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.team-list-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.team-item-title,
+.team-item-text {
+  text-align: center;
+  margin: 0 auto 8px;
+}
+
+.team-text-wrapper { 
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.team-item-text {
+  margin-bottom: 8px;
+}
+.team-title {
+  color: var(--title-text-color);
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.social-item {
+  width: 40px;
+  height: 40px;
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--background-color);
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-icon {
+  width: 16px;
+  height: 16px;
+  fill: #f4f4fd;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: #404bbf;
+}
+@media screen and (min-width: 768px) {
+  .team-list {
+      flex-direction: row;
+      /* Меняем колонку на строку */
+      flex-wrap: wrap;
+      /* Разрешаем перенос на вторую строку */
+      justify-content: center;
+      /* Центрируем карточки, если контейнер шире */
+      column-gap: 24px;
+      /* Отступ между колонками */
+      row-gap: 64px;
+      /* Отступ между верхним и нижним рядом */
+    }
+     .team-list-item {
+       width: calc((100% - 24px) / 2);
+      margin: 0;
+     }
+  }
+  @media screen and (min-width: 1158px) {
+  .team-list {
+      gap: 24px;
+    }
+    .team-list-item {
+      width: calc((100% - 24px * 3) / 4);
+    }
+      }
