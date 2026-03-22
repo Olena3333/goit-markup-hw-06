@@ -483,7 +483,6 @@ address {
   padding-bottom: 96px;
 }
 
-
 .principle-item-title,
 .team-item-title,
 .portfolio-item-title {
@@ -540,7 +539,6 @@ address {
 }
 
 @media screen and (min-width: 1158px) {
-
   .section-principles {
     padding: 120px 0;
   }
@@ -608,8 +606,7 @@ address {
   width: 100%;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 1px 6px rgba(46, 47, 66, 0.08);
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .team-list-item img {
@@ -624,7 +621,7 @@ address {
   margin: 0 auto 8px;
 }
 
-.team-text-wrapper { 
+.team-text-wrapper {
   text-align: center;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -674,27 +671,125 @@ address {
 }
 @media screen and (min-width: 768px) {
   .team-list {
-      flex-direction: row;
-      /* Меняем колонку на строку */
-      flex-wrap: wrap;
-      /* Разрешаем перенос на вторую строку */
-      justify-content: center;
-      /* Центрируем карточки, если контейнер шире */
-      column-gap: 24px;
-      /* Отступ между колонками */
-      row-gap: 64px;
-      /* Отступ между верхним и нижним рядом */
-    }
-     .team-list-item {
-       width: calc((100% - 24px) / 2);
-      margin: 0;
-     }
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 64px;
   }
-  @media screen and (min-width: 1158px) {
+  .team-list-item {
+    width: calc((100% - 24px) / 2);
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1158px) {
   .team-list {
-      gap: 24px;
+    gap: 24px;
+  }
+  .team-list-item {
+    width: calc((100% - 24px * 3) / 4);
+  }
+}
+
+/* -- section Our Portfolio -- */
+.section-portfolio {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.portfolio-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 48px;
+}
+
+.portfolio-list-item {
+  border: 1px solid var(--background-color);
+  background: var(--hero-title-color);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+portfolio-list-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-overlay-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px 32px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--background-color);
+  background-color: var(--accent-color);
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-list-item:hover .overlay {
+  transform: translateY(0%);
+}
+
+.portfolio-list-item:focus .overlay {
+  transform: translateY(0%);
+}
+
+.portfolio-content-wrapper {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+@media screen and (min-width: 768px) {
+  .section-portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .portfolio-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+  .portfolio-list-item {
+    width: calc((100% - 48px) / 2);
+  }
+
+    .portfolio-item-title {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
     }
-    .team-list-item {
-      width: calc((100% - 24px * 3) / 4);
+  
+    .portfolio-item-text{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.5;
     }
-      }
+}
+
+@media screen and (min-width: 1158px) {
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+  .portfolio-list-item {
+    width: calc((100% - 48px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
