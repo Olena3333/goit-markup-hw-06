@@ -510,6 +510,7 @@ address {
   }
 
   .principles-list-item {
+    margin-bottom: 0;
     flex-basis: calc((100% - 24px) / 2);
   }
 
@@ -616,6 +617,14 @@ address {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
+.team-item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
 .team-item-text {
   margin-bottom: 8px;
 }
@@ -629,6 +638,7 @@ address {
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
+
 .social-item {
   width: 40px;
   height: 40px;
@@ -667,6 +677,7 @@ address {
     column-gap: 24px;
     row-gap: 64px;
   }
+
   .team-list-item {
     width: calc((100% - 24px) / 2);
     margin: 0;
@@ -745,6 +756,7 @@ portfolio-list-item:hover {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  text-align: left;
 }
 
 .portfolio-item-text {
@@ -768,6 +780,7 @@ portfolio-list-item:hover {
   .portfolio-list-item {
     width: calc((100% - 48px) / 2);
   }
+
 }
 
 @media screen and (min-width: 1158px) {
